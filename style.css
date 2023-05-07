@@ -1,0 +1,323 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+font-weight: 600;
+font-style: normal;
+overflow-x: hidden;
+}
+/* Navbar */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+}
+.menu{
+    background-color: #0065c3;
+    color: white;
+    font-size: 13px;
+    padding: 15px 25px 15px 25px;
+    display: flex;
+    align-items: center;
+
+    
+}
+.logo {
+    z-index: 1;
+}
+.logo img{
+    width: 60px;
+    margin-right: 25px;
+    margin-left: 10px;
+    transition: transform .2s;
+}
+
+
+
+
+.menu .item{
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 14px;
+    
+}
+.menu .item .items{
+    display: flex;
+
+}
+.menu .view{
+    font-size: 14px;
+}
+.bold-icon {
+    font-weight: bold;
+  }
+  
+
+.menu p{
+    width:max-content;
+    margin: 0;
+}
+.menu p, .menu li{
+    padding: 0 20px 0 20px;
+}
+
+.logo img:hover{
+    transform: rotate(360deg ) ;
+ 
+}
+.item .navbtn {
+    color: white;
+    padding: 7px 25px 5px 25px;
+    border-radius: 100px;
+    border: white solid 2px;
+    background: none;
+    font-size: 14px;
+}
+
+.item .navbtn:hover {
+    color: #0065c3;
+    background-color: white;
+}
+/* section one */
+.sectionOne{
+    background-color: black;
+    width: 100%;
+    height: 740px;
+ }
+.improveSvg{
+    position: absolute;
+    z-index: 1;
+    top: 135px;
+    left: 460px;
+    height: 190px;
+}
+.smallLogo{
+    width: 25px;
+}
+.sectionOne h2{
+    position: absolute;
+    font-size: 170px;
+    font-weight: 900;
+    color: #ffffff;
+   padding: 115px 0 0 720px;
+   letter-spacing: -5;
+   font-family: "Cervo Neue Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.sectionOne h3{
+    position: absolute;
+    font-size: 60px;
+    font-weight: 800;
+    color: #ffffff;
+   padding: 300px 0 0 720px;
+letter-spacing: -5;
+   font-family: "Cervo Neue Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.sectionOne h4{
+    position: absolute;
+    font-size: 100px;
+    font-weight: 800;
+    color: #ffffff;
+   padding: 340px 0 0 720px;
+   letter-spacing: -5;
+   font-family: "Cervo Neue Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.sectionOne h5{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 1000;
+    color: #ffffff;
+   padding: 460px 0 0 793px;
+   font-family: "Cervo Neue Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.sectionOne .pepsi{
+    width: 68%;
+    position: absolute;
+    right: 35%;
+
+}
+
+.improve{
+    position: absolute;
+    height: 40px;
+    padding: 460px 0 0 1100px;
+}
+.videos{
+    height: 500px;
+    width: 60%;
+    position: absolute;
+    top: 85%;
+    left: 55%; 
+}
+.video1{
+padding-right: 14px;
+}
+.video2{
+    cursor: pointer;
+    }
+.videos:hover{
+    cursor: pointer;
+}
+
+/* section two */
+.secondSection{
+    width: 100vw;
+    height: 660px;
+    background: url(assets/background1.png) no-repeat;
+    background-size: cover;
+}
+.nitropepsi{
+    position: absolute;
+    height: 580px;
+    left: 240px;
+    top: 130%;
+}
+.nitro{
+    position: absolute;
+    left: 52%;
+    top: 150%;
+}
+.secondSection h4{
+    font-family: "Sofia Pro Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    position: absolute;
+    color: #ffffff;
+    padding: 140px 0 0 780px;
+    letter-spacing: 8px;
+}
+.secondSection h2{
+    font-family: "Sofia Pro Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 150px;
+    font-weight: 1000;
+    position: absolute;
+    color: #C1693B;
+    padding: 150px 0 0 700px;
+}
+.secondSection h3{
+    font-family: 'Sofia', cursive;
+    font-size: 85px;
+    font-weight: 400;
+    position: absolute;
+    color: #ffffff;
+    padding: 300px 0 0 823px;
+}
+.secondSection p{
+    font-family: "Cervo Neue Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 383px 0 0 1024px;
+}
+.secondSection h6{
+    font-family: "Cervo Neue Black", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 1000;
+    position: absolute;
+    color: #ffffff;
+    padding: 420px 0 0 818px;
+}
+.secondSection button{
+    font-family:"Sofia Pro Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    color: #ffffff;
+    border-radius: 50px;
+    background: transparent;
+    margin: 510px 0 0 836px;
+    padding: 8px 25px;
+    border: 2px solid #ffffff;
+    transition: .5s;
+
+}
+.secondSection button:hover {
+    color: #032056;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+/* section three */
+.sectionthree{
+    background-color: #265cc5;
+    width: 100%;
+    height: 623px;
+}
+.sectionthree .twoimages{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 2%;
+    
+}
+.images{
+    background-color: #265cc5;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    padding: 0%;
+}
+.oneimage{
+   width: 70%;
+   background: url(assets/burger.jpg) no-repeat;
+   background-size: cover;
+   background-position: center; 
+   margin: 0%;
+   padding: 0%;
+}
+.better{
+    position: relative;
+    top: 71.5%;
+    left: 43%;
+    width: 58%;
+}
+.sectionthree .image1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 18%;
+
+
+}
+.sectionthree .image2{
+      margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.sectionthree .twoimages button{
+    background-color: #1437bf;
+    color: white;
+    border: 0 solid  #1437bf;
+    padding: 2%;
+    margin: 0%;
+}
+.sectionfour {
+    width: 100%;
+    height: 600px;
+    background: url(assets/sectionfour.png) no-repeat;
+    background-size: cover;
+
+}
+.sectionfour.mn{
+position: absolute;
+}
+.sectionfour .mango{
+    position: relative;
+    top: 13%;
+    left: 4%;
+}
+.sectionfour .like{
+    position: relative;
+    top: 30%;
+    left: 4%;
+}
