@@ -28,12 +28,14 @@ nav{
 }
 .logo {
     z-index: 1;
+
 }
 .logo img{
     width: 60px;
     margin-right: 25px;
     margin-left: 10px;
     transition: transform .2s;
+    overflow-x: hidden;
 }
 
 
@@ -47,14 +49,19 @@ nav{
     width: 100%;
     justify-content: space-between;
     font-size: 14px;
+
     
 }
 .menu .item .items{
+
     display: flex;
+
 
 }
 .menu .view{
-    font-size: 14px;
+ padding: 7px;
+    
+
 }
 .bold-icon {
     font-weight: bold;
@@ -69,23 +76,61 @@ nav{
     padding: 0 20px 0 20px;
 }
 
+.logo {
+    z-index: 1;
+    overflow: hidden;
+  }
+  
 .logo img:hover{
     transform: rotate(360deg ) ;
  
 }
-.item .navbtn {
+
+  
+:root {
+    --i: 1;
+  }
+  
+  .item .navbtn {
     color: white;
     padding: 7px 25px 5px 25px;
     border-radius: 100px;
     border: white solid 2px;
     background: none;
     font-size: 14px;
-}
-
-.item .navbtn:hover {
+  }
+  
+  .item .navbtn:hover {
     color: #0065c3;
     background-color: white;
-}
+  }
+  
+  .item .navbtn:hover span {
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+    --i: calc(var(--i) + 1);
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(0px);
+    }
+    20% {
+      transform: translateY(-20px);
+    }
+    40%, 100% {
+      transform: translateY(0px);
+    }
+  }
+  
+
+
+
+
+
+
+
+
 /* section one */
 .sectionOne{
     background-color: black;
@@ -320,4 +365,62 @@ position: absolute;
     position: relative;
     top: 30%;
     left: 4%;
+}
+/* section six */
+.sectionsix{
+    background-color: #0065c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.sectionsix p{
+    font-size: 10rem;
+    line-height: 10rem;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    z-index: 1;
+    overflow: hidden;
+}
+/* section seven */
+.sectionseven{
+    background-color: #0065c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+.sectionseven p{
+    font-size: 3.5rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: white;
+    width: 40%;
+    line-height: 4rem;
+    z-index: 1;
+    overflow: hidden;
+}
+.sectionseven img{
+    width: 600px;
+        z-index: 1;
+        overflow: hidden;
+      }
+/* footer */
+.footer{
+    background-color: #1a76cc;
+    display: flex;
+    align-items: center;
+}
+.footer img{
+    width: 80px;
+    margin-left: 40px;
+    margin-right: 250px;
+}
+.footer P{
+    padding: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 0.9rem;
 }

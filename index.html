@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +19,7 @@
    <nav>
     <div class="menu">
       <div class="logo ">
-        <img src="./assets/icons/logo-large.png">
+        <img src="assets/logo.png">
       </div>
       <div class="view">
         <p>VIEW PRODUCTS <i class="bi bi-chevron-down bold-icon"></i></p>
@@ -28,7 +30,24 @@
           <li>NEWSLETTER</li>
           <li>CONTACT US</li>
         </div>
-        <button class="navbtn">BUY PEPSI PRODUCTS</button>
+        <button class="navbtn">
+         
+          <span class="btn-text" style="--i-1: 1;">B</span>
+          <span class="btn-text" style="--i-2: 2;">U</span>
+          <span class="btn-text" style="--i-3: 3;">Y</span>
+          <span class="btn-text" style="--i-4: 4;">&nbsp; P</span>
+          <span class="btn-text" style="--i-5: 5;">E</span>
+          <span class="btn-text" style="--i-6: 6;">P</span>
+          <span class="btn-text" style="--i-7: 7;">S</span>
+          <span class="btn-text" style="--i-8: 8;">I &nbsp;</span>
+          <span class="btn-text" style="--i-9: 9;">P</span>
+          <span class="btn-text" style="--i-10: 10;">R</span>
+          <span class="btn-text" style="--i-11: 11;">O</span>
+          <span class="btn-text" style="--i-12: 12;">D</span>
+          <span class="btn-text" style="--i-13: 13;">U</span>
+          <span class="btn-text" style="--i-14: 14;">T</span>
+          <span class="btn-text" style="--i-15: 15;">S</span>
+        </button>
       </div>
 </div>
     </div>
@@ -55,7 +74,7 @@
 <!-- section two -->
 <section class="secondSection">
     <div>     
-            <img class="nitropepsi" src="/assets/nitropepsi.png" alt="">
+            <img class="nitropepsi" src="assets/twoinone.png" alt="">
              <img class="nitro" src="assets/nitro.png" alt="">
         <button>LEARN MORE</button> 
     </div>
@@ -91,6 +110,46 @@
 <section class="section-five" style="background-color: black;">
   <video src="assets/video.mp4"  class="w-100" autoplay loop muted></video>
 </section>
+<!-- section six -->
+<section class="sectionsix">
+  <img src="assets/pepsibottleimg.png" alt="">
+  <p>THAT'S WHAT I LIKE</p>
+</section>
+<!-- section seven -->
+<section class="sectionseven">
+  <p>ALL YOUR
+    FAVORITE FLAVORS.
+    ALL RIGHT HERE.</p>
+  <img src="assets/pepsibottles.png" alt="">
+</section>
+<!-- footer -->
+<footer class="footer">
+  <img src="assets/pepsi4.png" alt="">
+  <DIV>
+  <p>Contact Us <br>
+    TERMS & CONDITIONS <br>
+    PRIVACY & POLICY
+  </p></DIV>
+  <P>COPYRIGHT <br>
+    PRODUCTS FACTS <br>
+    STORE LOCATOR
+  </P>
+  <P>SERVE PEPSI <br>
+    ABOUT OUR ADS <br>
+    CAREERS
+  </P>
+</footer>
+<script>
+  const btn = document.querySelector('.navbtn');
 
+btn.addEventListener('mouseenter', () => {
+  btn.classList.add('hovered');
+});
+
+btn.addEventListener('mouseleave', () => {
+  btn.classList.remove('hovered');
+});
+
+</script>
 </body>
 </html>
